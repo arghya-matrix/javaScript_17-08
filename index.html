@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            color: aliceblue;
+        }
+        form {
+            
+            display: flex;
+            text-align: center;
+        }
+        form input{
+            color: aliceblue;
+            margin: 14px;
+            text-align: center;
+            color: black;
+        }
+        
+
+        
+    </style>
 </head>
 <body>
     <form action="/person" method="POST">
         <input type="text" name="name" placeholder="name">
         <input type="number" name="age" placeholder = "number">
         <input type="text" name="city" placeholder="city name">
-        <input type="submit">
+        <input class="submit" type="submit">
     </form>
+    <div class="button">
+        <button type="button" onclick="update()"> update </button>
+    </div>
 </body>
 </html>
